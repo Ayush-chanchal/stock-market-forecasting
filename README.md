@@ -69,3 +69,21 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
+
+## Summary
+### Objective
+Ensemble of Deep Q-Learning Agents for Stock Market Forecasting.
+### Deep Learning Algorithm
+Deep Q-Learning (DQN).
+### Purpose
+ The model aims to forecast stock market signals (buy, sell, none) based on historical data. It utilizes an ensemble of Deep Q-Learning agents to learn and predict the optimal actions to take in the stock market.
+### Input
+The input data consists of historical stock market features such as open, high, low, close prices, and datetime information.
+### Feature Extraction
+Preprocessing steps include encoding the target variable ('signal') into numerical labels, splitting the dataset into training and testing sets, and standard scaling of features for normalization.
+### Model Training
+Multiple Deep Q-Learning agents are initialized and trained with a specified number of episodes and batch size. The agents learn to predict buy and sell signals based on the input features.
+### Output
+The output includes:
+- Visualization: BTC close price plotted with predicted buy and sell signals for all years in the dataset.
+- Evaluation Metrics: Precision and accuracy scores to evaluate the performance of the ensemble of agents in forecasting stock market signals.
